@@ -8,22 +8,32 @@
 
 import Foundation
 
-public class ProductVariant {
-    public var id = ""
-    public var title: String?
-    public var price: Decimal?
-    public var available: Bool = false
-    public var image: Image?
-    public var selectedOptions: [VariantOption]?
-    public var productId = ""
+public struct ProductVariant: Equatable {
+    public let id: String
+    public let title: String
+    public let price: Decimal
+    public let isAvailable: Bool
+    public let selectedOptions: [VariantOption]
+    public let image: Image?
+    public let productId: String
 
-    public init(id: String = "", title: String? = nil, price: Decimal? = nil, available: Bool = false, image: Image? = nil, selectedOptions: [VariantOption]? = nil, productId: String = "") {
+    public init(id: String, title: String, price: Decimal, isAvailable: Bool, image: Image? = nil, selectedOptions: [VariantOption], productId: String) {
         self.id = id
         self.title = title
         self.price = price
-        self.available = available
+        self.isAvailable = isAvailable
         self.image = image
         self.selectedOptions = selectedOptions
         self.productId = productId
+    }
+    
+    public static func == (lhs: ProductVariant, rhs: ProductVariant) -> Bool {
+        return lhs.id == rhs.id
+            && lhs.title == rhs.title
+            && lhs.price == rhs.price
+            && lhs.isAvailable == rhs.isAvailable
+            && lhs.image == rhs.image
+            && lhs.selectedOptions == rhs.selectedOptions
+            && lhs.productId == rhs.productId
     }
 }

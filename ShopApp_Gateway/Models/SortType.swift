@@ -1,5 +1,5 @@
 //
-//  SortingValue.swift
+//  SortType.swift
 //  ShopApp_Gateway
 //
 //  Created by Mykola Voronin on 2/14/18.
@@ -8,10 +8,10 @@
 
 import Foundation
 
-public enum SortingValue: Int {
-    case createdAt
+public enum SortType: Int {
     case name
-    case popular
+    case recent
+    case relevant
     case type
     case priceHighToLow
     case priceLowToHigh

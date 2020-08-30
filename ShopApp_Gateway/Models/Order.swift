@@ -8,28 +8,41 @@
 
 import Foundation
 
-public class Order {
-    public var id = ""
-    public var currencyCode: String?
-    public var number: Int?
-    public var createdAt: Date?
-    public var shippingAddress: Address?
-    public var subtotalPrice: Decimal?
-    public var totalPrice: Decimal?
-    public var totalShippingPrice: Decimal?
-    public var paginationValue: String?
-    public var items: [OrderItem]?
-
-    public init(id: String = "", currencyCode: String? = nil, number: Int? = nil, createdAt: Date? = nil, shippingAddress: Address? = nil, subtotalPrice: Decimal? = nil, totalPrice: Decimal? = nil, totalShippingPrice: Decimal? = nil, paginationValue: String? = nil, items: [OrderItem]? = nil) {
+public struct Order: Equatable {
+    public let id: String
+    public let currencyCode: String
+    public let orderNumber: Int
+    public let subtotalPrice: Decimal?
+    public let totalShippingPrice: Decimal?
+    public let totalPrice: Decimal
+    public let createdAt: Date
+    public let orderProducts: [OrderProduct]
+    public let shippingAddress: Address
+    public let paginationValue: String?
+    
+    public init(id: String, currencyCode: String, orderNumber: Int, subtotalPrice: Decimal? = nil, totalShippingPrice: Decimal? = nil, totalPrice: Decimal, createdAt: Date, orderProducts: [OrderProduct], shippingAddress: Address, paginationValue: String? = nil) {
         self.id = id
         self.currencyCode = currencyCode
-        self.number = number
-        self.createdAt = createdAt
-        self.shippingAddress = shippingAddress
+        self.orderNumber = orderNumber
         self.subtotalPrice = subtotalPrice
-        self.totalPrice = totalPrice
         self.totalShippingPrice = totalShippingPrice
+        self.totalPrice = totalPrice
+        self.createdAt = createdAt
+        self.orderProducts = orderProducts
+        self.shippingAddress = shippingAddress
         self.paginationValue = paginationValue
-        self.items = items
+    }
+    
+    public static func == (lhs: Order, rhs: Order) -> Bool {
+        return lhs.id == rhs.id
+            && lhs.currencyCode == rhs.currencyCode
+            && lhs.orderNumber == rhs.orderNumber
+            && lhs.subtotalPrice == rhs.subtotalPrice
+            && lhs.totalShippingPrice == rhs.totalShippingPrice
+            && lhs.totalPrice == rhs.totalPrice
+            && lhs.createdAt == rhs.createdAt
+            && lhs.orderProducts == rhs.orderProducts
+            && lhs.shippingAddress == rhs.shippingAddress
+            && lhs.paginationValue == rhs.paginationValue
     }
 }

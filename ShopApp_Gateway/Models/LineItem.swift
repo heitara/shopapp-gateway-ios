@@ -13,9 +13,5 @@ public class LineItem {
     public var price: Decimal?
     public var quantity: Int = 0
 
-    public init(id: String = "", price: Decimal? = nil, quantity: Int = 0) {
-        self.id = id
-        self.price = price
-        self.quantity = quantity
-    }
+    public init() {}
 }

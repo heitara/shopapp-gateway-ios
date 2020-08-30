@@ -8,10 +8,12 @@
 
 import Foundation
 
-public class State {
-    public var name: String
-    
-    public init(name: String = "") {
+public struct State {
+    public let id: String
+    public let name: String
+
+    public init(id: String, name: String) {
+        self.id = id
         self.name = name
     }
 }

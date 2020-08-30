@@ -8,18 +8,17 @@
 
 import Foundation
 
-public class Author {
-    public var firstName: String?
-    public var lastName: String?
-    public var fullName: String?
-    public var email: String?
-    public var bio: String?
+public struct Author: Equatable {
+    public let firstName: String
+    public let lastName: String
 
-    public init(firstName: String? = nil, lastName: String? = nil, fullName: String? = nil, email: String? = nil, bio: String? = nil) {
+    public init(firstName: String, lastName: String) {
         self.firstName = firstName
         self.lastName = lastName
-        self.fullName = fullName
-        self.email = email
-        self.bio = bio
+    }
+    
+    public static func == (lhs: Author, rhs: Author) -> Bool {
+        return lhs.firstName == rhs.firstName
+            && lhs.lastName == rhs.lastName
     }
 }

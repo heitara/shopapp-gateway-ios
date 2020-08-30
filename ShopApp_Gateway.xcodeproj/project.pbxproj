@@ -34,10 +34,6 @@
 		9E12EB4324FC4B88000F953E /* OrderProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12EB3D24FC4B88000F953E /* OrderProduct.swift */; };
 		9E12EB4424FC4B88000F953E /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12EB3E24FC4B88000F953E /* Card.swift */; };
 		9E12EB4A24FC4D01000F953E /* Adapters in Resources */ = {isa = PBXBuildFile; fileRef = 9E12EB4924FC4D01000F953E /* Adapters */; };
-		9E12EB4E24FC52B1000F953E /* RepoCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12EB4D24FC52B1000F953E /* RepoCallback.swift */; };
-		9E12EB5024FC52D0000F953E /* RepoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12EB4F24FC52D0000F953E /* RepoError.swift */; };
-		9E12EB5324FC533D000F953E /* SortingValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12EB5124FC533C000F953E /* SortingValue.swift */; };
-		9E12EB5424FC533D000F953E /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12EB5224FC533C000F953E /* CreditCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -250,11 +246,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E12EB5324FC533D000F953E /* SortingValue.swift in Sources */,
 				8E5EFB202035F34400FD718B /* LineItem.swift in Sources */,
 				8E5EFB222035F34400FD718B /* Customer.swift in Sources */,
 				8E5EFB312035F34400FD718B /* ProductOption.swift in Sources */,
-				9E12EB5424FC533D000F953E /* CreditCard.swift in Sources */,
 				8E5EFB1D2035F34400FD718B /* CartProduct.swift in Sources */,
 				9E12EB4424FC4B88000F953E /* Card.swift in Sources */,
 				8E5EFB2D2035F34400FD718B /* Product.swift in Sources */,
@@ -264,12 +258,10 @@
 				8E5EFB272035F34400FD718B /* VariantOption.swift in Sources */,
 				8E5EFB322035F34400FD718B /* Article.swift in Sources */,
 				9E12EB4324FC4B88000F953E /* OrderProduct.swift in Sources */,
-				9E12EB5024FC52D0000F953E /* RepoError.swift in Sources */,
 				8E5EFB242035F34400FD718B /* Image.swift in Sources */,
 				8E5EFB232035F34400FD718B /* Author.swift in Sources */,
 				8E5EFB1F2035F34400FD718B /* Policy.swift in Sources */,
 				8E5EFB262035F34400FD718B /* ProductVariant.swift in Sources */,
-				9E12EB4E24FC52B1000F953E /* RepoCallback.swift in Sources */,
 				8E5EFB252035F34400FD718B /* State.swift in Sources */,
 				0B1AB004206A46C100A24E5B /* API.swift in Sources */,
 				9E12EB4024FC4B88000F953E /* ShopAppError.swift in Sources */,

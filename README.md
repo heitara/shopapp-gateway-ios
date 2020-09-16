@@ -1,5 +1,6 @@
 # ShopApp Gateway
 
+This is a project separates the core model library in a standalone repository. The version here is based on the version 1.0.6 that can be found [here]()
 
 Документация на основната библиотека, която дефинира началните модели изпозлвани от ShopApp-iOS версията.
 

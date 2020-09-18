@@ -66,10 +66,6 @@
 		9E12EB3D24FC4B88000F953E /* OrderProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderProduct.swift; sourceTree = "<group>"; };
 		9E12EB3E24FC4B88000F953E /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		9E12EB4924FC4D01000F953E /* Adapters */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Adapters; sourceTree = "<group>"; };
-		9E12EB4D24FC52B1000F953E /* RepoCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoCallback.swift; sourceTree = "<group>"; };
-		9E12EB4F24FC52D0000F953E /* RepoError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoError.swift; sourceTree = "<group>"; };
-		9E12EB5124FC533C000F953E /* SortingValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortingValue.swift; sourceTree = "<group>"; };
-		9E12EB5224FC533C000F953E /* CreditCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,10 +127,6 @@
 		8E5EFAF92035F34300FD718B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9E12EB5224FC533C000F953E /* CreditCard.swift */,
-				9E12EB5124FC533C000F953E /* SortingValue.swift */,
-				9E12EB4D24FC52B1000F953E /* RepoCallback.swift */,
-				9E12EB4F24FC52D0000F953E /* RepoError.swift */,
 				9E12EB3E24FC4B88000F953E /* Card.swift */,
 				9E12EB3D24FC4B88000F953E /* OrderProduct.swift */,
 				9E12EB3A24FC4B88000F953E /* ShopAppError.swift */,
@@ -518,7 +510,7 @@
 				INFOPLIST_FILE = ShopApp_Gateway/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.rubygarage.ShopApp.ShopApp-Gateway";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -549,7 +541,7 @@
 				INFOPLIST_FILE = ShopApp_Gateway/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.rubygarage.ShopApp.ShopApp-Gateway";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -579,7 +571,7 @@
 				INFOPLIST_FILE = ShopApp_Gateway/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.rubygarage.ShopApp.ShopApp-Gateway";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -608,7 +600,7 @@
 				INFOPLIST_FILE = ShopApp_Gateway/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.rubygarage.ShopApp.ShopApp-Gateway";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
